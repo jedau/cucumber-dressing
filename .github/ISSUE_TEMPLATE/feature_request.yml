@@ -1,0 +1,103 @@
+name: ✨ Feature Request
+description: Suggest a new feature or enhancement for DRESSING
+title: '[Feature]: '
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature! Please fill out the form below to help us understand your idea.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: Is your feature request related to a problem? Please describe.
+      placeholder: I'm always frustrated when...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like to see
+      placeholder: I would like DRESSING to...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: feature-area
+    attributes:
+      label: Feature Area
+      description: Which area would this feature affect?
+      options:
+        - CLI options
+        - Report templates/styling
+        - Charts/statistics
+        - Themes/customization
+        - JSON parsing
+        - Export formats
+        - Performance
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: Describe your use case and why this feature is important
+      placeholder: |
+        In my project, I need to...
+        This would help because...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Describe alternatives you've considered or workarounds you're currently using
+      placeholder: I've tried... but it doesn't work because...
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples or Mockups
+      description: If applicable, provide examples, code snippets, or mockups
+      placeholder: |
+        ```javascript
+        // Example usage
+        dressing.generate({
+          jsonFile: 'report.json',
+          newFeature: true
+        })
+        ```
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - Nice to have
+        - Would significantly improve my workflow
+        - Blocking my work / critical
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      description: Would you be willing to contribute?
+      options:
+        - label: I'm willing to submit a PR with this feature
+        - label: I'm willing to help test this feature
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context, links, or references about the feature request

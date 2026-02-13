@@ -1,0 +1,255 @@
+[
+  {
+    "id": "sample-feature",
+    "uri": "features/sample.feature",
+    "keyword": "Feature",
+    "name": "Sample Feature for Testing",
+    "description": "This is a sample feature to demonstrate DRESSING capabilities",
+    "line": 1,
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      },
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ],
+    "elements": [
+      {
+        "id": "sample-scenario-1",
+        "keyword": "Scenario",
+        "name": "Successful login with valid credentials",
+        "description": "Tests that a user can successfully log in with correct username and password",
+        "line": 5,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 4
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the login page",
+            "line": 6,
+            "result": {
+              "status": "passed",
+              "duration": 1250000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter valid credentials",
+            "line": 7,
+            "result": {
+              "status": "passed",
+              "duration": 850000000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click the login button",
+            "line": 8,
+            "result": {
+              "status": "passed",
+              "duration": 2100000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should be redirected to the dashboard",
+            "line": 9,
+            "result": {
+              "status": "passed",
+              "duration": 500000000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I should see a welcome message",
+            "line": 10,
+            "result": {
+              "status": "passed",
+              "duration": 300000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "sample-scenario-2",
+        "keyword": "Scenario",
+        "name": "Failed login with invalid password",
+        "line": 12,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 11
+          },
+          {
+            "name": "@negative",
+            "line": 11
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the login page",
+            "line": 13,
+            "result": {
+              "status": "passed",
+              "duration": 980000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter an invalid password",
+            "line": 14,
+            "result": {
+              "status": "passed",
+              "duration": 650000000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click the login button",
+            "line": 15,
+            "result": {
+              "status": "passed",
+              "duration": 1200000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see an error message",
+            "line": 16,
+            "result": {
+              "status": "failed",
+              "duration": 450000000,
+              "error_message": "AssertionError: Expected error message to be displayed\n    at World.<anonymous> (steps/login.js:45:12)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I should remain on the login page",
+            "line": 17,
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "sample-scenario-3",
+        "keyword": "Scenario",
+        "name": "Skipped scenario for demonstration",
+        "line": 19,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@wip",
+            "line": 18
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "this scenario is work in progress",
+            "line": 20,
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "it is executed",
+            "line": 21,
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "it should be skipped",
+            "line": 22,
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "data-feature",
+    "uri": "features/data-tables.feature",
+    "keyword": "Feature",
+    "name": "Data Table Demonstration",
+    "line": 1,
+    "tags": [
+      {
+        "name": "@data",
+        "line": 1
+      }
+    ],
+    "elements": [
+      {
+        "id": "data-scenario",
+        "keyword": "Scenario",
+        "name": "Verify user information with data table",
+        "line": 4,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "the following users exist",
+            "line": 5,
+            "rows": [
+              {
+                "cells": ["Username", "Email", "Role"]
+              },
+              {
+                "cells": ["john.doe", "john@example.com", "Admin"]
+              },
+              {
+                "cells": ["jane.smith", "jane@example.com", "User"]
+              },
+              {
+                "cells": ["bob.wilson", "bob@example.com", "Guest"]
+              }
+            ],
+            "result": {
+              "status": "passed",
+              "duration": 1500000000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I query the user database",
+            "line": 10,
+            "result": {
+              "status": "passed",
+              "duration": 800000000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "all users should be present",
+            "line": 11,
+            "result": {
+              "status": "passed",
+              "duration": 600000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

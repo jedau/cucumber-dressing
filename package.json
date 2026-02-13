@@ -1,0 +1,92 @@
+{
+  "name": "dressing",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Detailed Report of Executed Scenarios, Steps and INsights for Gherkin - A comprehensive test automation reporter for Gherkin-based test results",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "dressing": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:watch": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --watch",
+    "test:coverage": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepublishOnly": "npm run lint && npm run build && npm test",
+    "preversion": "npm run lint && npm test",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "example": "node dist/example.js",
+    "clean": "rm -rf dist coverage"
+  },
+  "keywords": [
+    "cucumber",
+    "gherkin",
+    "test",
+    "reporter",
+    "html",
+    "report",
+    "automation",
+    "testing",
+    "bdd",
+    "behavior-driven-development",
+    "test-results",
+    "json-to-html",
+    "test-automation",
+    "test-reporting",
+    "cucumber-report",
+    "html-reporter",
+    "test-report-generator"
+  ],
+  "author": "Jed Aureus Gonzales",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jedau/dressing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jedau/dressing/issues"
+  },
+  "homepage": "https://github.com/jedau/dressing#readme",
+  "files": [
+    "dist",
+    "!dist/**/*.map",
+    "!dist/__tests__",
+    "!dist/example.*",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/fs-extra": "^11.0.0",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "cross-env": "^10.1.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "jest": "^29.5.0",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.0.0"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "commander": "^11.0.0",
+    "fs-extra": "^11.1.0",
+    "glob": "^10.3.0",
+    "handlebars": "^4.7.8",
+    "markdown-it": "^14.0.0",
+    "open": "^10.0.0"
+  }
+}

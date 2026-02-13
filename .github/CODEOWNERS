@@ -1,0 +1,27 @@
+# CODEOWNERS - Define who can approve changes to specific files
+
+# More info: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Package configuration and version - requires maintainer approval
+
+/package.json @jedau
+/package-lock.json @jedau
+
+# Core source code - requires review
+
+/src/\*\* @jedau
+
+# Configuration files - requires maintainer approval
+
+/tsconfig.json @jedau
+/eslint.config.js @jedau
+/.github/\*\* @jedau
+
+# Documentation - anyone can propose changes
+
+\*.md
+
+# Examples and tests - anyone can contribute
+
+/examples/**
+/src/**tests**/**
