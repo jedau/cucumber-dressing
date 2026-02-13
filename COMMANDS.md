@@ -6,10 +6,13 @@ Quick reference for all DRESSING commands and options.
 
 ```bash
 # Local installation
-npm install dressing --save-dev
+npm install cucumber-dressing --save-dev
 
 # Global installation
-npm install -g dressing
+npm install -g cucumber-dressing
+
+# Command (regardless of installation method)
+dressing
 ```
 
 ## CLI Commands
@@ -211,7 +214,7 @@ dressing generate \
 ### Basic Usage
 
 ```javascript
-const dressing = require('dressing')
+const dressing = require('cucumber-dressing')
 
 await dressing.generate({
   jsonFile: 'cucumber-report.json',
@@ -222,7 +225,7 @@ await dressing.generate({
 ### With TypeScript
 
 ```typescript
-import { generate } from 'dressing'
+import { generate } from 'cucumber-dressing'
 
 await generate({
   jsonFile: 'cucumber-report.json',

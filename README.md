@@ -4,7 +4,7 @@
 
 A comprehensive, modern test automation reporter specifically designed for Gherkin-based test results. DRESSING transforms your Cucumber JSON output into beautiful, interactive HTML reports with advanced filtering, search capabilities, and insightful visualizations.
 
-[![npm version](https://img.shields.io/npm/v/dressing.svg)](https://www.npmjs.com/package/dressing)
+[![npm version](https://img.shields.io/npm/v/cucumber-dressing.svg)](https://www.npmjs.com/package/cucumber-dressing)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
 
@@ -29,13 +29,13 @@ A comprehensive, modern test automation reporter specifically designed for Gherk
 ## 📦 Installation
 
 ```bash
-npm install dressing --save-dev
+npm install cucumber-dressing --save-dev
 ```
 
 Or with yarn:
 
 ```bash
-yarn add dressing --dev
+yarn add cucumber-dressing --dev
 ```
 
 ## 🚀 Quick Start
@@ -57,7 +57,7 @@ npx dressing generate -d ./test-results -o report.html --open
 ### Programmatic Usage
 
 ```javascript
-const dressing = require('dressing')
+const dressing = require('cucumber-dressing')
 
 await dressing.generate({
   jsonDir: './test-results',

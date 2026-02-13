@@ -72,8 +72,8 @@ body:
       label: Installation Method
       description: How did you install DRESSING?
       options:
-        - npm install dressing
-        - npm install -g dressing
+        - npm install cucumber-dressing
+        - npm install -g cucumber-dressing
         - npx dressing
         - Cloned from GitHub
     validations:

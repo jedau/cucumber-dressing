@@ -1,5 +1,5 @@
 {
-  "name": "dressing",
+  "name": "cucumber-dressing",
   "version": "0.1.0",
   "type": "module",
   "description": "Detailed Report of Executed Scenarios, Steps and INsights for Gherkin - A comprehensive test automation reporter for Gherkin-based test results",
@@ -47,12 +47,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jedau/dressing.git"
+    "url": "https://github.com/jedau/cucumber-dressing.git"
   },
   "bugs": {
-    "url": "https://github.com/jedau/dressing/issues"
+    "url": "https://github.com/jedau/cucumber-dressing/issues"
   },
-  "homepage": "https://github.com/jedau/dressing#readme",
+  "homepage": "https://github.com/jedau/cucumber-dressing#readme",
   "files": [
     "dist",
     "!dist/**/*.map",
@@ -63,8 +63,8 @@
     "CHANGELOG.md"
   ],
   "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6.0.0"
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.0.0",

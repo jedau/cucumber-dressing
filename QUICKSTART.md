@@ -4,13 +4,13 @@ Get up and running with DRESSING in less than 5 minutes!
 
 ## Prerequisites
 
-- Node.js >= 14.0.0
-- npm >= 6.0.0
+- Node.js >= 18.0.0
+- npm >= 8.0.0
 
 ## Installation
 
 ```bash
-npm install dressing --save-dev
+npm install cucumber-dressing --save-dev
 ```
 
 ## Basic Usage
@@ -46,7 +46,7 @@ npx dressing generate -i test-results/cucumber-report.json -o test-report.html -
 
 ```javascript
 // generate-report.js
-const dressing = require('dressing')
+const dressing = require('cucumber-dressing')
 
 await dressing.generate({
   jsonFile: 'test-results/cucumber-report.json',
@@ -181,7 +181,7 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Run tests
         run: npm test
@@ -309,8 +309,8 @@ npx dressing generate -i results.json -o report.html --open
 
 ## Support
 
-- 📫 Report issues: [GitHub Issues](https://github.com/jedau/dressing/issues)
-- 💬 Ask questions: [GitHub Discussions](https://github.com/jedau/dressing/discussions)
+- 📫 Report issues: [GitHub Issues](https://github.com/jedau/cucumber-dressing/issues)
+- 💬 Ask questions: [GitHub Discussions](https://github.com/jedau/cucumber-dressing/discussions)
 - 📖 Read docs: [README](README.md)
 
 ---
