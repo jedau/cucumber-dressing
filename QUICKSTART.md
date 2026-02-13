@@ -4,8 +4,8 @@ Get up and running with DRESSING in less than 5 minutes!
 
 ## Prerequisites
 
-- Node.js >= 14.0.0
-- npm >= 6.0.0
+- Node.js >= 18.0.0
+- npm >= 8.0.0
 
 ## Installation
 
