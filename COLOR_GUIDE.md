@@ -23,7 +23,7 @@ dressing generate -i report.json -o report.html \
 ### Programmatic Usage
 
 ```typescript
-import { generate } from 'dressing'
+import { generate } from 'cucumber-dressing'
 
 await generate({
   jsonFile: 'cucumber.json',

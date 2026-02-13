@@ -88,4 +88,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-For more details on each release, see the [GitHub Releases](https://github.com/jedau/dressing/releases) page.
+For more details on each release, see the [GitHub Releases](https://github.com/jedau/cucumber-dressing/releases) page.

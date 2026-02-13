@@ -96,6 +96,6 @@ echo    npm run build:watch
 echo.
 echo ===============================================================
 echo.
-echo For more information, visit: https://github.com/jedau/dressing
+echo For more information, visit: https://github.com/jedau/cucumber-dressing
 echo.
 pause

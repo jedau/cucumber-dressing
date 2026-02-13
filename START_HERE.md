@@ -139,7 +139,7 @@ npm publish                # Publish to npm
    git init
    git add .
    git commit -m "Initial commit: DRESSING v1.0.0"
-   git remote add origin https://github.com/jedau/dressing.git
+   git remote add origin https://github.com/jedau/cucumber-dressing.git
    git push -u origin main
    ```
 
@@ -189,7 +189,7 @@ npm publish                # Publish to npm
 
 ## Support & Community
 
-- **Issues:** Report bugs at [GitHub Issues](https://github.com/jedau/dressing/issues)
+- **Issues:** Report bugs at [GitHub Issues](https://github.com/jedau/cucumber-dressing/issues)
 - **Discussions:** Ask questions at [GitHub Discussions](https://github.com/yourusername/dressing/discussions)
 - **Documentation:** Full docs in [README.md](README.md)
 
